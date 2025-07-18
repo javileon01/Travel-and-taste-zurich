@@ -41,7 +41,7 @@ Puedes ver la web en funcionamiento aquí:
 
 ## ✉️ Contacto
 
-Si quieres saber más sobre este proyecto o cualquier otro, contáctame por [LinkedIn](https://www.linkedin.com/in/javier-le%C3%B3n-soler-2675012a9/).
+Si quieres saber más sobre este proyecto o cualquier otro, contáctame por [LinkedIn](https://www.linkedin.com/in/javier-le%C3%B3n-soler-2675012a9/)
 
 ---
 
