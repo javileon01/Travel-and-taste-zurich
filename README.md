@@ -1,2 +1,26 @@
-# zurich-landing
-Landing page estática realizada como práctica universitaria, desarrollada con HTML, CSS y JavaScript puros.
+# Zurich Landing Page
+
+Landing page desarrollada como práctica universitaria para Zurich.  
+Realizada con **HTML, CSS y JavaScript** puros.
+
+## Demo
+[Ver página online](https://javileon01.github.io/zurich-landing/) <!-- Este enlace funcionará cuando actives GitHub Pages -->
+
+## Características
+
+- Diseño responsive
+- Maquetación 100% HTML, CSS y JS, sin frameworks
+- Interactividad básica implementada con JavaScript
+- Práctica enfocada en experiencia visual y usabilidad
+
+## Capturas
+
+<!-- Añade aquí capturas de pantalla si quieres, subiendo imágenes a la carpeta del repo y enlazando aquí. -->
+
+## Uso
+
+Simplemente abre `index.html` en tu navegador.
+
+## Autor
+
+[Javier León Soler](https://github.com/javileon01)
