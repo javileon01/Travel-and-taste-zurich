@@ -1,6 +1,6 @@
 # Zurich Landing Page
 
-Landing page desarrollada como práctica universitaria para Zurich.  
+Landing page desarrollada como práctica universitaria.
 Realizada con **HTML, CSS y JavaScript** puros.
 
 ## Demo
