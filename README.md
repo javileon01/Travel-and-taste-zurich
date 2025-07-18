@@ -13,10 +13,6 @@ Realizada con **HTML, CSS y JavaScript** puros.
 - Interactividad básica implementada con JavaScript
 - Práctica enfocada en experiencia visual y usabilidad
 
-## Capturas
-
-<!-- Añade aquí capturas de pantalla si quieres, subiendo imágenes a la carpeta del repo y enlazando aquí. -->
-
 ## Uso
 
 Simplemente abre `index.html` en tu navegador.
