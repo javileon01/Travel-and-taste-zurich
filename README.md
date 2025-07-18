@@ -7,4 +7,23 @@
 
 ## 📂 Estructura del Proyecto
 
----
+zurich/
+│
+├── assets/
+│   ├── audio/
+│   ├── css/
+│   ├── data/
+│   ├── img/
+│   ├── js/
+│   ├── models/
+│   └── videos/
+│
+├── pages/
+│   ├── consejos.html
+│   ├── contacto.html
+│   ├── interactivo.html
+│   ├── restaurantes.html
+│   └── transporte.html
+│
+├── index.html
+└── README.md
