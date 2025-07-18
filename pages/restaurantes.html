@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurantes | Travel & Taste - Z&uacute;rich</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/restaurantes.css">
+    <link rel="icon" href="../assets/img/icon_suiza.png">
+</head>
+<body>
+
+    <!-- Menú de navegación -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html">Travel & Taste</a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Abrir menú">
+            ☰
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="../pages/transporte.html">Transporte</a></li>
+            <li><a href="../pages/restaurantes.html">Restaurantes</a></li>
+            <li><a href="../pages/consejos.html">Consejos</a></li>
+            <li><a href="../pages/interactivo.html">Zona interactiva</a></li>
+            <li><a href="../pages/contacto.html" class="active">Contacto</a></li>
+            <li class="logo-suiza">
+                <img src="../assets/img/logo_suiza.png" alt="Swiss_flag">
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Sección de Restaurantes -->
+    <div class="container mt-5">
+        <section class="restaurantes-seccion">
+            <h2>Gu&iacute;a de Restaurantes en Z&uacute;rich</h2>
+            <p>Suiza es conocida no solo por su impresionante paisaje y su precisa puntualidad, sino tambi&eacute;n 
+               por su rica y variada oferta gastron&oacute;mica.</p>
+            <p>En cuanto a los precios, comer en Suiza tiende a ser m&aacute;s costoso que en otros pa&iacute;ses europeos. 
+               Un almuerzo en un restaurante econ&oacute;mico puede rondar los <strong>25 CHF</strong>, mientras que 
+               en un restaurante de gama media, el precio de una cena puede variar entre <strong>50 y 80 CHF</strong> 
+               por persona.</p>
+            <p>Para disfrutar al m&aacute;ximo de la oferta gastron&oacute;mica en Z&uacute;rich, se recomienda reservar con 
+               antelaci&oacute;n, especialmente en los locales m&aacute;s populares.</p>
+        </section>
+
+        <!-- Restaurantes suizos -->
+        <section class="restaurantes-lista suizo mt-5">
+            <h2><strong>Restaurantes Suizos 🧀</strong></h2>
+            <p>La cocina suiza es famosa por sus quesos y platos contundentes. <strong>Fondue, raclette y r&ouml;sti</strong> 
+               son solo algunas de las especialidades locales que no te puedes perder en Z&uacute;rich.</p>
+            <p>Los restaurantes suizos combinan tradici&oacute;n y calidad, ofreciendo experiencias gastron&oacute;micas &uacute;nicas en 
+               ambientes acogedores y t&iacute;picos de los Alpes.</p>
+            <p><strong>Precio medio:</strong> 40-60 CHF por persona.</p>
+        </section>
+
+        <div class="container text-center mt-5 mb-5">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <img src="../assets/img/restaurante_suizo.jpg" alt="Restaurante Suizo" class="img-fluid w-100 img-altura rounded shadow">
+                </div>
+                <div class="col-md-6 mb-4">
+                    <img src="../assets/img/restaurante_suizo_2.jpeg" alt="Restaurante Suizo"class="img-fluid w-100 img-altura rounded shadow">
+                </div>
+            </div>
+        </div>
+
+        <!-- Restaurantes internacionales -->
+        <section class="restaurantes-lista internacional mt-5">
+            <h2><strong>Restaurantes Internacionales 🌍</strong></h2>
+            <p>Gracias a su <strong>posici&oacute;n geogr&aacute;fica</strong> y diversidad cultural, Z&uacute;rich 
+               cuenta con una amplia oferta gastron&oacute;mica influenciada por la <strong>cocina italiana, francesa 
+               y alemana</strong>. Esta mezcla de tradiciones europeas se refleja en los restaurantes de la ciudad.</p>
+            <p>Adem&aacute;s de estas influencias tradicionales, Z&uacute;rich ofrece opciones de <strong>cocina japonesa, 
+               mexicana</strong> y otras internacionales, garantizando una experiencia culinaria &uacute;nica para todos los gustos.</p>
+            <ul class="lista-precios">
+                <li><strong>Italianos y Franceses:</strong> 30-50 CHF por persona.</li>
+                <li><strong>Alemanes:</strong> 25-45 CHF por persona.</li>
+                <li><strong>Japoneses:</strong> 40-70 CHF por persona.</li>
+                <li><strong>Mexicanos y otros internacionales:</strong> 25-50 CHF por persona.</li>
+            </ul>
+        </section>
+
+        <div class="container text-center mt-5 mb-5">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <img src="../assets/img/restaurante_int.jpg" alt="Restaurante Suizo" class="img-fluid w-100 img-altura rounded shadow">
+                </div>
+                <div class="col-md-6 mb-4">
+                    <img src="../assets/img/restaurante_int_2.jpg" alt="Restaurante Suizo" class="img-fluid w-100 img-altura rounded shadow">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <img src="../assets/img/restaurante_int_3.jpg" alt="Restaurante Suizo" class="img-fluid w-100 img-altura rounded shadow">
+                </div>
+                <div class="col-md-6 mb-4">
+                    <img src="../assets/img/restaurante_int_4.jpg" alt="Restaurante Suizo" class="img-fluid w-100 img-altura rounded shadow">
+                </div>
+            </div>
+        </div>
+
+        <!-- Restaurantes de Lujo -->
+        <section class="restaurantes-lista lujo mt-5">
+            <h2><strong>Restaurantes de Lujo 🥂</strong></h2>
+            <p>Para quienes buscan una experiencia culinaria excepcional, los restaurantes de lujo en Z&uacute;rich, como 
+               <strong>Haute</strong> y <strong>Pavillon</strong>, ofrecen <strong>men&uacute;s de degustaci&oacute;n</strong> con 
+               ingredientes ex&oacute;ticos y t&eacute;cnicas avanzadas de cocina.</p>
+            <p>La combinaci&oacute;n de una <strong>carta de vinos selecta</strong> y un <strong>servicio impecable</strong> 
+               hacen de estos lugares una elección perfecta para ocasiones especiales.</p>
+            <p><strong>Precio medio:</strong> 80-150 CHF por persona.</p>
+        </section>
+
+        <div class="container text-center mt-5 mb-3">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <img src="../assets/img/restaurante_lujo.jpeg" alt="Restaurante Suizo" class="img-fluid w-100 img-altura rounded shadow">
+                </div>
+                <div class="col-md-6 mb-4">
+                    <img src="../assets/img/restaurante_lujo_2.jpg" alt="Restaurante Suizo" class="img-fluid w-100 img-altura rounded shadow">
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Mapa interactivo -->
+        <div class="container">
+            <div id="map" class="map-container"></div>
+        </div>
+
+        <!-- Guía de Audio -->
+        <section class="container audio-section mt-5">
+            <h2 class="mb-3"><strong>Gu&iacute;a de Audio: Platos T&iacute;picos Suizos 🎧</strong></h2>
+            <p class="mb-4 fs-5">Explora los sabores de Suiza seleccionando un audio.</p>
+        
+            <!-- Selector de pistas -->
+            <label for="audio-select" class="fs-5"><strong>Selecciona un plato:</strong></label>
+            <select id="audio-select" onchange="cargarAudio()">
+                <option value="">Elige un audio</option>
+                <option value="../assets/audio/fondue.mp3" data-nombre="Fondue de Queso">🧀 Fondue de Queso</option>
+                <option value="../assets/audio/rosti.mp3" data-nombre="Rösti">🥔 Rösti</option>
+                <option value="../assets/audio/muesli.mp3" data-nombre="Bircher Muesli">🍏 Bircher Muesli</option>
+                <option value="../assets/audio/raclette.mp3" data-nombre="Raclette">🍳 Raclette</option>
+            </select>
+        
+            <!-- Reproductor de audio -->
+            <audio id="audio-player" class="mb-4" controls></audio>
+        
+            <!-- Controles personalizados -->
+            <div class="audio-controls mt-3">
+                <button onclick="playAudio()">▶</button>
+                <button onclick="pauseAudio()">⏸️</button>
+                <button onclick="stopAudio()">■</button>
+                <button onclick="skipBackward()">◀◀</button>
+                <button onclick="skipForward()">➤</button>
+            </div>
+        
+            <!-- Información dinámica -->
+            <div class="audio-info mt-3">
+                <p><strong>Archivo:</strong> <span id="archivo">Ninguno</span></p>
+                <p><strong>Duraci&oacute;n total:</strong> <span id="duracion-total">0:00</span></p>
+                <p><strong>Tiempo restante:</strong> <span id="tiempo-restante">0:00</span></p>
+                <p><strong>Estado:</strong> <span id="estado">Ninguno</span></p>
+            </div>
+        </section>        
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="text-center text-lg-start mt-5 py-3 border-top">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 Travel & Taste - Z&uacute;rich | Javier Le&oacute;n Soler</p>
+        </div>
+    </footer>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script para la sección de restaurantes -->
+    <script src="../assets/js/restaurantes.js"></script>
+    <!-- Script para el menu -->
+    <script src="../assets/js/travelandtaste.js"></script>
+</body>
+</html>

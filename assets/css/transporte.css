@@ -1,0 +1,122 @@
+/* Fondo y texto principal para la sección de transporte */
+.transporte-info {
+    background-color: #401422; /* Fondo oscuro para armonía con la paleta */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.transporte-info h2 {
+    margin-bottom: 10px;
+}
+
+.transporte-info p {
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+/* Mapa interactivo */
+.map-container {
+    height: 400px;
+    border: 2px solid #921818; /* Borde en color principal */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+}
+
+.transporte-detalles {
+    background-color: #3a0d0d;  /* Fondo oscuro para armonizar con la paleta */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.transporte-detalles h3 {
+    color: #ffcc00;  /* Títulos en rojo acorde a la paleta */
+    margin-bottom: 10px;
+    font-size: 35;
+}
+
+.transporte-detalles p {
+    margin-bottom: 10px;    /* Espacio entre parágrafos */
+    text-indent: 0;         /* Evita sangrías en los párrafos */
+    line-height: 1.5;       /* Mejora la lectura */
+    font-size: 20px;
+    opacity: 0.85;
+}
+
+.stronger {
+    color: #f59d22;         /* Color distinto para resaltar lo importante */
+}
+
+/* Estilo para la sección del video */
+.video-section {
+    text-align: center;
+    background-color: #340707; /* Fondo oscuro para contraste */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.video-section h3 {
+    margin: 10px 0;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+#video-zurich {
+    border: 3px solid #f0ad4e;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);  /* Sombra para dar profundidad */
+    transition: all 0.5s ease-in-out;
+}
+
+/* Botones personalizados para el video */
+.controls button {
+    background-color: #921818; /* Color principal */
+    font-size: 32px;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.controls button:hover {
+    background-color: #b12222; /* Efecto hover más claro */
+}
+
+/* Control de volumen personalizado */
+#volume-control {
+    margin: 0 10px;
+    accent-color: #921818; /* Color principal para el control */
+}
+
+/* Barra de progreso del video */
+#progress-bar {
+    width: 95%;
+    height: 15px;
+    margin: 10px 0;
+    accent-color: #921818; /* Color principal para la barra */
+}
+
+/* Estilo para los popups de Leaflet */
+.leaflet-popup-content-wrapper {
+    background-color: #3a0d0d; /* Fondo acorde con la paleta */
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.leaflet-popup-tip {
+    background-color: #3a0d0d; /* Fondo acorde con la paleta */
+    border: 1px solid #3a0d0d; /* Borde del mismo color */
+}
+

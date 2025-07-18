@@ -1,0 +1,173 @@
+/* Estilos para la sección de consejos */
+.consejos-seccion {
+    background-color: #3a0d0d;
+    color: white;
+    padding-top: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.consejos-seccion h2 {
+    margin-bottom: 10px;
+}
+
+.consejos-seccion p {
+    font-size: 18px;
+    opacity: 0.8;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+/* Estilos para la tarjeta del tiempo */
+.weather-card {
+    width: 380px;
+    background-color: #40262f;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.weather-card h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.weather-card h2 {
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    color: #ffcc00;
+}
+
+.weather-card p {
+    font-size: 22px;
+    opacity: 0.8;
+    margin-top: 10px;
+}
+
+.weather-card img {
+    width: 80px;
+    margin-top: 21px;
+    margin-bottom: 6px;
+}
+
+.custom-link {
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.custom-link::after {
+    content: '↗';
+    color: white
+}
+
+.custom-link:hover {
+    color: white;
+}
+
+.consejos-seccion, .weather-card {
+    height: 325px;
+}
+
+/* Contenedor principal que ocupa toda la altura */
+.color-segment {
+    display: flex;
+    height: 100%;           /* Ocupa toda la altura de la pantalla */
+    width: 100%;             /* Ocupa todo el ancho de la pantalla */
+    background-color: #40262f;
+    padding: 20px 0;
+    margin-bottom: 0;
+}
+
+/* Estilo para las listas de consejos */
+.consejos-lista {
+    background-color: #190108;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.consejos-lista-frases {
+    background-color: #190108;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.consejos-lista-frases h2 {
+    margin-bottom: 15px;
+    color: #ffcc00;
+}
+
+.consejos-lista-frases h3 {
+    margin-bottom: 20px;
+    color: #ffcc00;
+    margin-top: 60px;
+}
+
+.consejos-lista-frases p {
+    font-size: 20px;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.claro {
+    background-color: #40262f;
+}
+
+.oscuro {
+    background-color: #190108;
+}
+
+.consejos-lista h2 {
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+.consejos-lista h3 {
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+.consejos-lista p {
+    font-size: 20px;
+    opacity: 0.9;
+    margin-bottom: 40px;
+}
+
+.consejos-lista strong {
+    color: #d1a700;
+}
+
+.consejos-lista-frases strong {
+    color: #d1a700;
+}
+
+footer {
+    background-color: #190108;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 1200px) {
+    .weather-card, .consejos-seccion {
+        text-align: center;
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .weather-card, .consejos-seccion {
+        height: 100%;
+    }
+}

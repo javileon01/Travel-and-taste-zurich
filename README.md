@@ -1,22 +1,10 @@
-# Zurich Landing Page
+# Travel & Taste - Zúrich 🌍🇨🇭
 
-Landing page desarrollada como práctica universitaria.
-Realizada con **HTML, CSS y JavaScript** puros.
+## 📖 Descripción
+"Travel & Taste - Zúrich" es un sitio web estático diseñado para ofrecer información útil sobre la ciudad de **Zúrich, Suiza**. Proporciona detalles sobre transporte, gastronomía, consejos de viaje y una zona interactiva con experiencias multimedia.
 
-## Demo
-[Ver página online](https://javileon01.github.io/zurich-landing/) <!-- Este enlace funcionará cuando actives GitHub Pages -->
+---
 
-## Características
+## 📂 Estructura del Proyecto
 
-- Diseño responsive
-- Maquetación 100% HTML, CSS y JS, sin frameworks
-- Interactividad básica implementada con JavaScript
-- Práctica enfocada en experiencia visual y usabilidad
-
-## Uso
-
-Simplemente abre `index.html` en tu navegador.
-
-## Autor
-
-[Javier León Soler](https://github.com/javileon01)
+---

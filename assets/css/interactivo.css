@@ -1,0 +1,294 @@
+.zona-interactiva {
+    background-color: #3a0d0d; /* Fondo oscuro para armonía con la paleta */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.zona-interactiva h2 {
+    margin-bottom: 15px;
+}
+
+.zona-interactiva p {
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+strong {
+    color: #f59d22;
+}
+
+/* Contenedor de los botones y controles */
+.canvas-seccion {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+/* Contenedor principal para el canvas y los controles */
+#mapaCanvas {
+    border: 3px solid #921818;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: crosshair;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el título del mapa */
+.canvas-seccion h3 {
+    color: #ffcc00;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.canvas-seccion p {
+    color: #fff4c8;
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+/* Estilos para los botones */
+.canvas-seccion button {
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+.dibujar {
+    background-color: #026700;
+}
+
+.dibujar:hover {
+    background-color: #038a00;
+}
+
+.borrar {
+    background-color: #921818;
+}
+
+.borrar:hover {
+    background-color: #b12222;
+}
+
+.borrar-todo {
+    background-color: #c30000;
+}
+
+.borrar-todo:hover {
+    background-color: #ff4133;
+}
+
+/* Input de color para rutas */
+#colorRutas {
+    cursor: pointer;
+    border: 2px solid #921818;
+    border-radius: 5px;
+    margin-left: 10px;
+    position: relative;
+    top: 5px;
+}
+
+/* Etiqueta del selector de color */
+.canvas-seccion label {
+    color: white;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+/* Estilo para los pines en el mapa */
+.pin {
+    fill: #ffcc00;
+    stroke: #921818;
+    stroke-width: 2;
+}
+
+/* Estilos para el canvas cuando se está dibujando */
+.dibujando {
+    border-color: #ffcc00;
+    cursor: crosshair;
+}
+
+/* Transiciones suaves */
+button, #colorRutas {
+    transition: all 0.3s ease;
+}
+
+#nombre_usuario, #grosor_rutas {
+    background-color: #800000;
+    font-weight: bold;
+    padding: 8px 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+    color: white;
+    border-color: white;
+    transition: all 0.3s ease;
+}
+
+#grosor_rutas {
+    width: 270px;
+}
+
+#nombre_usuario:focus, #grosor_rutas:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.9); /* Sombra brillante blanca */
+}
+
+#nombre_usuario::placeholder, #grosor_rutas::placeholder {
+    padding-left: 6px;
+    font-weight: normal;
+    color: white;
+    opacity: 0.9;
+}
+
+.threejs-seccion {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background-color: #3a0d0d; /* igual que zona-interactiva */
+    padding: 20px;
+    padding-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid #921818;
+}
+
+.threejs-seccion h3 {
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+.threejs-seccion p {
+    color: #fff4c8;
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+/* Contenedor del renderer WebGL */
+#castilloContainer {
+    width: 100%;
+    max-width: 1200px;
+    aspect-ratio: 16 / 10;
+    border: 3px solid #921818;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    background-color: #000;
+    position: relative;
+}
+
+/* Visualización de datos */
+.grafico-temperatura {
+  background-color: #3a0d0d;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  border: 1px solid white;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.grafico-temperatura h3 {
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+.grafico-temperatura p {
+  font-size: 18px;
+  color: #fff4c8;
+  opacity: 0.85;
+  margin-bottom: 30px;
+  margin-top: 18px;
+}
+
+#grafico_temperatura {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.tooltip-temp {
+  position: absolute;
+  visibility: hidden;
+  background: #fff4c8;
+  color: #3a0d0d;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  pointer-events: none; /* para que no bloquee el hover */
+  transition: opacity 0.2s ease;
+  border: 2px solid #921818;
+  font-size: 16px;
+}
+
+.mes-tooltip {
+  font-weight: bold;
+  color: #C82A13;
+}
+
+
+@media (max-width: 1400px) {
+    #castilloContainer {
+        width: 900px;
+    }
+}
+
+@media (max-width: 1000px) {
+    #mapaCanvas {
+        width: 100%;
+    }
+    #castilloContainer {
+        width: 600px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 800px) {
+    #castilloContainer {
+        width: 400px;
+        height: 400px;
+    }
+    .canvas-seccion h3, .threejs-seccion h3 {
+        font-size: 24px;
+    }
+    .canvas-seccion p, .threejs-seccion p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    #castilloContainer {
+        width: 300px;
+        height: 300px;
+    }
+    .canvas-seccion h3, .threejs-seccion h3 {
+        font-size: 20px;
+    }
+    .canvas-seccion p, .threejs-seccion p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 380px) {
+    #castilloContainer {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 320px) {
+    #castilloContainer {
+        width: 200px;
+        height: 200px;
+    }
+}

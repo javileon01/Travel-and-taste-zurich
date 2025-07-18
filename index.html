@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel & Taste - Z&uacute;rich</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/travelandtaste.css">
+    <link rel="icon" href="assets/img/icon_suiza.png">
+</head>
+<body class="home">
+
+    <!-- Menú de navegación -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">Travel & Taste</a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Abrir menú">
+            ☰
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="pages/transporte.html">Transporte</a></li>
+            <li><a href="pages/restaurantes.html">Restaurantes</a></li>
+            <li><a href="pages/consejos.html">Consejos</a></li>
+            <li><a href="pages/interactivo.html">Zona interactiva</a></li>
+            <li><a href="pages/contacto.html" class="active">Contacto</a></li>
+            <li class="logo-suiza">
+                <img src="assets/img/logo_suiza.png" alt="Swiss_flag">
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="position-relative text-white">
+        <!-- Imagen de fondo -->
+        <img src="assets/img/zurich_main.jpg" class="w-100 h-100 object-fit-cover" alt="Zurich_main">
+
+        <!-- Filtro oscuro sobre la imagen -->
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+
+        <!-- Contenedor del texto sobre la imagen -->
+        <div class="position-absolute top-50 start-50 text-center translate-middle">
+            <h1 class="fw-bold display-5 main_text">Bienvenido a Travel & Taste - Zúrich</h1>
+            <p class="fs-4 main_text">Descubre la ciudad de Zúrich con nosotros</p>
+        </div>
+    </div>
+
+    <!-- Sección de texto e imagen -->
+    <div class="container my-5">
+        <div class="row align-items-center">
+            <!-- Sección de texto a la izquierda -->
+            <div class="col-md-6">
+                <h2 class="fw-bold fs-2 text-white">Descubre la magia de Z&uacute;rich</h2>
+                <p class="fs-4 descripcion_text">
+                    Descubre Z&uacute;rich, una ciudad donde la tradici&oacute;n y la modernidad se fusionan.  
+                    Navega por su eficiente sistema de transporte, explora su exquisita gastronom&iacute;a y  
+                    sum&eacute;rgete en una experiencia interactiva con mapas, visualizaciones y sonidos &uacute;nicos.  
+                    Travel & Taste - Z&uacute;rich te ofrece toda la informaci&oacute;n que necesitas para disfrutar  
+                    al m&aacute;ximo de esta vibrante metr&oacute;poli suiza.
+                </p>
+            </div>
+    
+            <!-- Imagen a la derecha -->
+            <div class="col-md-6 img-map-zurich">
+                <img src="assets/img/zurich_map.png" class="img-fluid" alt="Zurich_map">
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de video -->
+    <div class="container text-center my-5">
+        <video id="videoPlayer" class="w-100 rounded" autoplay muted>
+            <source src="assets/videos/video_zurich.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+        </video>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="text-center text-lg-start mt-5 py-3 border-top">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 Travel & Taste - Z&uacute;rich | Javier Le&oacute;n Soler</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script para el menu -->
+    <script src="assets/js/travelandtaste.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'MiFuente';
+    src: local('Segoe UI'), local('Roboto'), local('Helvetica Neue'), local('Arial'), sans-serif;
+}
+
+body {
+    font-family: 'MiFuente', sans-serif;
+    background-color: #190108;
+}
+
+/* Estilos generales del navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #290d16;
+    padding-top: 25px;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 0;
+}
+
+.logo {
+    margin-right: 5em;
+    padding-bottom: 3px;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.logo a:hover {
+    color: #ffcc00;
+}
+
+.logo-suiza {
+    padding-top: 3px;
+}
+
+/* Estilos del menú de navegación */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin: 8px 0;
+    padding: 0;
+}
+
+/* Estilos de los links */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+/* Estilos del logo de Suiza */
+.logo-suiza img {
+    width: 30px;
+    height: auto;
+}
+
+/* Estilos para el botón hamburguesa en móviles */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #40262f;
+    color: #fff;
+}
+
+/* ✅ Responsive: Ajustes para pantallas menores a 1090px */
+@media (max-width: 1150px) {
+    .navbar {
+        padding-top: 32px;
+    }
+
+    .logo {
+        margin-right: 10px;                /* Elimina el empuje a la derecha */
+        margin-bottom: 10px;            /* Espacio debajo del logo */
+        text-align: center;             /* Centra el logo */
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-bottom: 10px;            /* Espacio debajo del botón */
+        text-align: center;             /* Centra el botón */
+    }
+
+    .nav-links {
+        flex-direction: column;          /* Coloca los enlaces en columna */
+        visibility: hidden;              /* Oculto por defecto */
+        opacity: 0;                      /* Transparente por defecto */
+        max-height: 0;                   /* Altura 0 para la transición */
+        overflow: hidden;                /* Oculta el contenido desbordado */
+        transition: max-height 0.5s ease, opacity 0.5s ease, visibility 0.5s ease; 
+        text-align: center;              /* Centra los enlaces */
+        width: 100%;                     /* Ocupa todo el ancho para centrarlos */
+        padding: 0;                      /* Quita el padding para ajuste fino */
+        gap: 5px;
+    }
+
+    .nav-links.active {
+        visibility: visible;             /* Muestra el menú cuando está activo */
+        opacity: 1;                      /* Opaco cuando está activo */
+        max-height: 500px;               /* Ajusta según el contenido */
+    }
+
+    .nav-links a {
+        display: block;
+        text-align: center;              /* Centra los enlaces */
+    }
+
+    .logo-suiza {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+
+
+
