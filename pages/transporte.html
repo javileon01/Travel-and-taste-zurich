@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transporte | Travel & Taste - Z&uacute;rich</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/transporte.css">
+    <link rel="icon" href="../assets/img/icon_suiza.png">
+</head>
+<body>
+
+    <!-- Menú de navegación -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html">Travel & Taste</a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Abrir menú">
+            ☰
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="../pages/transporte.html">Transporte</a></li>
+            <li><a href="../pages/restaurantes.html">Restaurantes</a></li>
+            <li><a href="../pages/consejos.html">Consejos</a></li>
+            <li><a href="../pages/interactivo.html">Zona interactiva</a></li>
+            <li><a href="../pages/contacto.html" class="active">Contacto</a></li>
+            <li class="logo-suiza">
+                <img src="../assets/img/logo_suiza.png" alt="Swiss_flag">
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="container mt-5">
+        <!-- Información básica -->
+        <article class="transporte-info">
+            <h2>Transporte en Z&uacute;rich</h2>
+            <p>Explora la eficiente red de transporte p&uacute;blico en Z&uacute;rich, que incluye tranv&iacute;as, 
+               autobuses y trenes. Con un solo billete, puedes moverte f&aacute;cilmente por toda la ciudad.</p>
+        </article>
+
+        <!-- Información adicional sobre el transporte -->
+        <section class="transporte-detalles mt-4">
+            <h3>Tarifas y Billetes</h3>
+            <p><strong>Billete sencillo:</strong> Aproximadamente 4.40 CHF para viajes cortos dentro de la ciudad.</p>
+            <p><strong>Billete diario:</strong> Alrededor de 8.80 CHF para viajes ilimitados por un d&iacute;a.</p>
+            <p><strong class="stronger">Swiss Travel Pass:</strong> Ofrece viajes ilimitados en trenes, autobuses y barcos por toda Suiza durante 
+               un per&iacute;odo determinado. Adem&aacute;s, ofrece entrada gratuita a m&aacute;s de 500 museos y descuentos en diversas 
+               excursiones de monta&ntilde;a, el precio var&iacute;a en funci&oacute;n de la duraci&oacute;n, ideal para turistas.</p>
+        
+            <h3 class="mt-5">Eficiencia y Puntualidad</h3>
+            <p>El transporte p&uacute;blico en Z&uacute;rich es reconocido por su puntualidad y eficiencia, con una tasa de 
+               puntualidad superior al 95%. Los tranv&iacute;as y autobuses est&aacute;n perfectamente sincronizados con los 
+               horarios de los trenes regionales.</p>
+        
+            <h3 class="mt-5">Recomendaciones para Turistas</h3>
+            <p>Compra billetes antes de abordar, disponibles en m&aacute;quinas autom&aacute;ticas y estaciones.</p>
+            <p>Utiliza la aplicaci&oacute;n ZVV para consultar rutas y horarios en tiempo real.</p>
+            <p>Los billetes deben ser validados antes de viajar para evitar multas.</p>
+        </section>
+        
+        <!-- Mapa interactivo -->
+        <div id="map" class="map-container mt-5"></div>
+
+        <!-- Video explicativo -->
+        <div class="container video-section">
+            <h3>Transporte p&uacute;blico en la ciudad de Z&uacute;rich</h3>
+            <video id="video-zurich" class="w-100 rounded">
+                <source src="../assets/videos/video_zurich_transporte.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+            <div class="controls">
+                <button onclick="playVideo()">▶</button>
+                <button onclick="pauseVideo()">⏸</button>
+                <button onclick="stopVideo()">■</button>
+                <button onclick="skipForward()">➤</button>
+                <input type="range" id="volume-control" min="0" max="1" step="0.1" onchange="setVolume(this.value)">
+                <button onclick="maximizeVideo()">⛶</button>
+            </div>
+            <progress id="progress-bar" value="0" max="100"></progress>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="text-center text-lg-start mt-5 py-3 border-top">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 Travel & Taste - Z&uacute;rich | Javier Le&oacute;n Soler</p>
+        </div>
+    </footer>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script para la sección de transporte -->
+     <script src="../assets/js/transporte.js"></script>
+    <!-- Script para el menu -->
+    <script src="../assets/js/travelandtaste.js"></script>
+</body>
+</html>

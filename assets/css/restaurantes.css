@@ -1,0 +1,166 @@
+.restaurantes-seccion {
+    background-color: #3a0d0d; /* Fondo oscuro para armonía con la paleta */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.restaurantes-seccion h2 {
+    margin-bottom: 15px;
+}
+
+.restaurantes-seccion p {
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+.restaurantes-lista {
+    background-color: #40262f; /* Fondo oscuro para armonía con la paleta */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.restaurantes-lista h2 {
+    margin-bottom: 15px;
+}
+
+.restaurantes-lista p {
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+.lista-precios {
+    font-size: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    opacity: 0.9;
+}
+
+.lista-precios li {
+    margin-bottom: 5px;
+}
+
+strong {
+    color: #f59d22;
+}
+
+.img-altura {
+    height: 350px; /* Ajusta esta altura según necesites */
+    object-fit: cover; /* Recorta las imágenes para que se vean iguales */
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.img-altura:hover {
+    transform: scale(1.05);
+}
+
+/* Mapa interactivo */
+.map-container {
+    height: 400px;
+    border: 2px solid #921818; /* Borde en color principal */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo para los popups de Leaflet */
+.leaflet-popup-content-wrapper {
+    background-color: #3a0d0d; /* Fondo acorde con la paleta */
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.leaflet-popup-tip {
+    background-color: #3a0d0d; /* Fondo acorde con la paleta */
+    border: 1px solid #3a0d0d; /* Borde del mismo color */
+}
+
+.audio-section {
+    width: 35%;
+    background-color: #3a0d0d; /* Fondo oscuro para armonía con la paleta */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.audio-controls button {
+    background-color: #921818;
+    font-size: 24px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.audio-controls button:hover {
+    background-color: #b12222;
+}
+
+select {
+    background-color: #40262f;
+    color: white;
+    border: 1px solid #921818;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+select:hover {
+    background-color: #921818;
+}
+
+label {
+    margin-right: 10px;
+}
+
+/* Estilo para el reproductor de audio */
+#audio-player {
+    width: 70%;
+    margin: 20px 0;
+    display: block;
+
+}
+
+/* Barra de progreso del audio */
+#audio-player::-webkit-media-controls-panel {
+    background-color: #9e4242;
+}
+
+.audio-info p {
+    margin: 5px 0;
+}
+
+@media (max-width: 1140px) {
+    .audio-section {
+        width: 100%;
+    }
+
+    .audio-controls button {
+        font-size: 20px;
+    }
+
+    #audio-player {
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .audio-section {
+        width: 80%;
+    }
+}

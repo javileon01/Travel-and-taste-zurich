@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zona interactiva | Travel & Taste - Z&uacute;rich</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/interactivo.css">
+    <link rel="icon" href="../assets/img/icon_suiza.png">
+    <!-- Script THREE.js -->
+    <script type="importmap">
+        {
+          "imports": {
+              "three": "https://unpkg.com/three@0.151.3/build/three.module.js",
+              "three/addons/": "https://unpkg.com/three@0.151.3/examples/jsm/",
+              "OrbitControls": "https://unpkg.com/three@0.151.3/examples/jsm/controls/OrbitControls.js"
+          }
+        }
+    </script>
+    <!-- D3.js -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+
+    <!-- Menú de navegación -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html">Travel & Taste</a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Abrir menú">
+            ☰
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="../pages/transporte.html">Transporte</a></li>
+            <li><a href="../pages/restaurantes.html">Restaurantes</a></li>
+            <li><a href="../pages/consejos.html">Consejos</a></li>
+            <li><a href="../pages/interactivo.html">Zona interactiva</a></li>
+            <li><a href="../pages/contacto.html" class="active">Contacto</a></li>
+            <li class="logo-suiza">
+                <img src="../assets/img/logo_suiza.png" alt="Swiss_flag">
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+     <div class="container mt-5">
+
+        <!-- Información sobre la Zona Interactiva -->
+        <section class="zona-interactiva">
+            <h2><strong>Zona Interactiva 🎨🎶</strong></h2>
+            <p>Explora Z&uacute;rich de una manera inmersiva y divertida a trav&eacute;s de nuestra <strong>Zona Interactiva</strong>.
+            Utiliza el <strong>mapa interactivo</strong> en <strong>Canvas (2D)</strong> para dibujar rutas personalizadas y marcar
+            tus lugares tur&iacute;sticos favoritos. Disfruta tambi&eacute;n de un <strong>modelo en 3D</strong> del <strong>Castillo de Tarasp</strong>,
+            un monumento ic&oacute;nico de Suiza, que puedes girar y explorar desde todos los 
+            &aacute;ngulos. Y si te interesa el clima, consulta tambi&eacute;n nuestra <strong>visualizaci&oacute;n interactiva</strong> con la <strong>temperatura media mensual en Z&uacute;rich</strong>,
+            ideal para planificar tu viaje en la mejor &eacute;poca del a&ntilde;o.</p>
+            <p>Para una experiencia m&aacute;s realista, se activa <strong>audio ambiente</strong> mientras dibujas rutas en el mapa interactivo.
+            El sonido simula un <em>paseo tranquilo por los parques de Z&uacute;rich</em>, con efectos relajantes como viento suave y canto de p&aacute;jaros.
+            ¡Descubre Z&uacute;rich de una manera completamente nueva!</p>
+        </section>
+
+        <!-- Canvas -->
+        <section class="canvas-seccion">
+            <h3><strong>Juego: Conecta los Lugares Emblemáticos de Zúrich</strong></h3>
+            <p>Marca dos lugares emblemáticos en el mapa y dibuja la ruta más corta hasta ellos. ¡Intenta no salirte de
+               la ruta ni chocar con edificios!</p>
+               <p><strong>Instrucciones:</strong> Usa el <strong>clic izquierdo</strong> para dibujar rutas y el 
+                  <strong>clic derecho</strong> para colocar marcadores. Activa o desactiva los modos usando los botones. 
+                  <strong>Introduce tu nombre y el grosor del trazo para poder jugar.</strong> ¡Buena suerte!</p>
+            <canvas id="mapaCanvas" width="1300" height="755"></canvas>
+            <div>
+                <button class="dibujar" id="toggleDibujoButton" onclick="toggleDibujo()" style="display:none">Activar Dibujado</button>
+                <button class="borrar" id="botonBorrarRutas" onclick="borrarRutas()" style="display:none">Borrar Rutas</button>
+                <button class="borrar" id="botonBorrarMarcadores" onclick="borrarMarcadores()"style="display:none">Borrar Marcadores</button>
+                <button class="borrar-todo" id="botonBorrarTodo" onclick="borrarTodo()" style="display:none">Borrar Todo</button>
+                <label for="colorRutas" id="labelColorRutas" style="display:none" >Color de Rutas:</label>
+                <input type="color" id="colorRutas" style="display:none" value="#ffcc00">
+                <input type="text" id="nombre_usuario" placeholder="Introduce tu nombre">
+                <input type="text" id="grosor_rutas" placeholder="Introduce grosor del trazo (1-10)" min="1" max="10">
+            </div>
+        </section>
+
+        <!-- Audio API -->
+        <section>
+            <audio id="audioJuego" loop>
+                <source src="../assets/audio/ambiente.mp3" type="audio/mp3">
+            </audio>
+        </section>
+
+        <!-- Modelo 3D -->
+        <section class="threejs-seccion">
+            <h3><strong>Explora el Castillo de Tarasp en 3D</strong></h3>
+            <p>
+            Gira y explora este emblemático monumento suizo usando el ratón.
+            ¡Acércate y descúbrelo en detalle!
+            </p>
+            <p><em>Controles interactivos:</em><br>
+            <strong>L</strong> para cambiar entre día y noche,&nbsp;
+            <strong>R</strong> para rotar el castillo,&nbsp;
+            <strong>D</strong> para ocultar o mostrar la bandera,&nbsp;
+            <strong>I</strong> para restablecer la posición inicial.<br>
+            <strong>1</strong> vista normal,&nbsp;
+            <strong>2</strong> vista bandera,&nbsp;
+            <strong>3</strong> vista cenital.
+            </p>
+            <div id="castilloContainer"></div>
+        </section>
+
+        <section id="grafico-temperatura" class="grafico-temperatura mt-5">
+            <h3><strong>Temperatura Media Mensual en Zúrich 🌡️</strong></h3>
+            <p>Visualiza la temperatura media mensual en Zúrich durante un año.</p>
+            <svg id="grafico_temperatura"></svg>
+        </section>
+
+        <div id="tooltip" class="tooltip-temp"></div>
+
+     </div>
+
+    <!-- Pie de página -->
+    <footer class="text-center text-lg-start mt-5 py-3 border-top">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 Travel & Taste - Z&uacute;rich | Javier Le&oacute;n Soler</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script para el menu -->
+    <script src="../assets/js/travelandtaste.js"></script>
+    <!-- Script para la zona interactiva -->
+    <script src="../assets/js/interactivo.js"></script>
+    <!-- Script para el castillo -->
+    <script src="../assets/js/castle.js" type="module"></script>
+    <!-- Script para el gráfico de temperatura -->
+    <script src="../assets/js/graficoTemperatura.js"></script>
+</body>
+</html>
